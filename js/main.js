@@ -32,7 +32,11 @@
 
   /* ---- Scroll reveal via IntersectionObserver ---- */
   var reveals = document.querySelectorAll('.reveal');
-  if ('IntersectionObserver' in window && reveals.length) {
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function revealAll() { reveals.forEach(function (el) { el.classList.add('in'); }); }
+  if (reduceMotion || !('IntersectionObserver' in window) || !reveals.length) {
+    revealAll();
+  } else {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
@@ -42,8 +46,10 @@
       });
     }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
     reveals.forEach(function (el) { io.observe(el); });
-  } else {
-    reveals.forEach(function (el) { el.classList.add('in'); });
+    // Fail-safe: if the rendering loop is throttled (background tab, power
+    // saving, some headless tools) the observer may never fire. setTimeout is
+    // not tied to the paint loop, so this guarantees content becomes visible.
+    setTimeout(revealAll, 2500);
   }
 
   /* ---- Animated counters (only for real, factual numbers) ---- */
