@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Update the host/sitemap URL below once the final GitHub Pages URL or custom domain is known.
+Sitemap: https://ks-bhatti.github.io/bis-connect-web/sitemap.xml
