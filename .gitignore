@@ -1,0 +1,13 @@
+# Source material — raw, UNSANITIZED app screenshots. NEVER publish these.
+# Only recreated HTML/CSS mockups and sanitized exports in assets/ may ship.
+secreenshort_desktop/
+*.screenshots-src/
+_source/
+
+# OS / editor cruft
+Thumbs.db
+.DS_Store
+*.tmp
+
+# Local design backups (not for publishing)
+_v2-backup/

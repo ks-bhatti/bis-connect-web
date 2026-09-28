@@ -1,4 +1,4 @@
-# BIS Connect — Company Website
+# BIS Connect, Company Website
 
 Public marketing and business-verification website for **BIS CONNECT (SMC-PRIVATE) LIMITED**.
 
@@ -58,15 +58,15 @@ If you point a custom domain (e.g. `bisconnect.pk`) at GitHub Pages:
 
 ## Go-live status
 
-Content and business/legal wording are approved and published (refund 7-day window, 5–7 business-day
+Content and business/legal wording are approved and published (refund 7-day window, 5 to 7 business-day
 review, activation within one business day, Pakistan governing law, "operated by" branding). Policy
 pages carry an effective date of 26 September 2026, and `robots.txt`/`sitemap.xml` use the live base URL
 `https://ks-bhatti.github.io/bis-connect-web/`.
 
-- **Contact details** are the official letterhead values (email, phones, address) — approved for public display.
+- **Contact details** are the official letterhead values (email, phones, address), approved for public display.
 - **Company Information** block on the About section shows the SECP corporate identifier `0352556`,
   incorporation date 25 August 2026, company type and registered office (Punjab), from the official certificate.
-- **Pricing**: "Request Pricing / Contact us" only — no prices shown.
+- **Pricing**: "Request Pricing / Contact us" only, no prices shown.
 
 ## Notes
 

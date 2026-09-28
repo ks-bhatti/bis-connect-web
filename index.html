@@ -4,21 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>document.documentElement.className += ' js';</script>
-  <title>BIS Connect — Smart ISP &amp; Business Management Platform</title>
-  <meta name="description" content="BIS Connect is a cloud-based ISP and business management platform by BIS CONNECT (SMC-PRIVATE) LIMITED — customer management, automated billing, payments, network automation and support in one place.">
+  <title>BIS Connect | ISP Management Platform</title>
+  <meta name="description" content="BIS Connect is a cloud based ISP management platform by BIS CONNECT (SMC-PRIVATE) LIMITED. Manage customers, MikroTik routers, packages, billing, revenue and support from web and mobile.">
   <meta name="theme-color" content="#0C1330">
   <link rel="canonical" href="https://ks-bhatti.github.io/bis-connect-web/">
 
-  <!-- Open Graph / social -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="BIS Connect — Smart ISP &amp; Business Management Platform">
-  <meta property="og:description" content="Cloud-based ISP &amp; business management software by BIS CONNECT (SMC-PRIVATE) LIMITED.">
+  <meta property="og:title" content="BIS Connect | ISP Management Platform">
+  <meta property="og:description" content="Manage customers, MikroTik routers, packages, billing, revenue and support from web and mobile.">
   <meta property="og:url" content="https://ks-bhatti.github.io/bis-connect-web/">
   <meta property="og:image" content="https://ks-bhatti.github.io/bis-connect-web/assets/og-image.png">
   <meta property="og:site_name" content="BIS Connect">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="BIS Connect — Smart ISP &amp; Business Management Platform">
-  <meta name="twitter:description" content="Cloud-based ISP &amp; business management software by BIS CONNECT (SMC-PRIVATE) LIMITED.">
+  <meta name="twitter:title" content="BIS Connect | ISP Management Platform">
+  <meta name="twitter:description" content="Manage customers, MikroTik routers, packages, billing, revenue and support from web and mobile.">
   <meta name="twitter:image" content="https://ks-bhatti.github.io/bis-connect-web/assets/og-image.png">
 
   <link rel="icon" href="assets/favicon.ico" sizes="any">
@@ -29,6 +28,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/v2.css">
 
   <script type="application/ld+json">
   {
@@ -38,16 +38,11 @@
     "alternateName": "BIS Connect",
     "url": "https://ks-bhatti.github.io/bis-connect-web/",
     "logo": "https://ks-bhatti.github.io/bis-connect-web/assets/favicon-512.png",
-    "description": "Software development company providing BIS Connect, a cloud-based ISP and business management platform, along with IT consultancy and telecom software services.",
+    "description": "Software company providing BIS Connect, a cloud based ISP management platform (customers, MikroTik routers, billing, revenue, support), plus IT consultancy and telecom software services.",
     "email": "bisconnect.info@gmail.com",
     "telephone": "+92 349 4061949",
     "foundingLocation": "Punjab, Pakistan",
-    "address": {
-      "@type": "PostalAddress",
-      "addressRegion": "Punjab",
-      "addressCountry": "PK",
-      "addressLocality": "Shahkot, Nankana Sahib"
-    },
+    "address": { "@type": "PostalAddress", "addressRegion": "Punjab", "addressCountry": "PK", "addressLocality": "Shahkot, Nankana Sahib" },
     "areaServed": "PK"
   }
   </script>
@@ -64,306 +59,425 @@
       </a>
       <nav aria-label="Primary navigation">
         <ul class="nav-links" id="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
           <li><a href="#platform">Platform</a></li>
+          <li><a href="#operations">Features</a></li>
           <li><a href="#how">How it works</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#mobile">Mobile</a></li>
+          <li><a href="#company">Company</a></li>
         </ul>
       </nav>
       <div class="nav-cta">
-        <a class="btn btn-primary" href="#contact">Request Pricing</a>
-        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
-          <span></span><span></span><span></span>
-        </button>
+        <a class="btn btn-primary" href="#demo">Request a demo</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
       </div>
     </div>
   </header>
 
   <main id="main">
-    <!-- ===== Hero ===== -->
+    <!-- ===== 1. Hero ===== -->
     <section class="hero">
-      <span class="hero__blob b1"></span><span class="hero__blob b2"></span><span class="hero__blob b3"></span>
       <div class="container">
-        <span class="hero__badge"><span class="dot"></span> Cloud-based SaaS · Built in Pakistan</span>
-        <h1>Run your ISP &amp; business on <span class="grad-text">one smart platform</span></h1>
-        <p>BIS Connect brings customer management, automated billing, payments, network automation and support together — so internet service providers and growing businesses can operate faster and with less manual work.</p>
-        <div class="hero__actions">
-          <a class="btn btn-primary btn-lg" href="#contact">Get Started</a>
-          <a class="btn btn-ghost btn-lg" href="#platform">Explore the Platform</a>
-        </div>
-        <p class="hero__note">Operated by BIS CONNECT (SMC-PRIVATE) LIMITED — SECP-incorporated in Pakistan, with its registered office in Punjab.</p>
-      </div>
-    </section>
-
-    <!-- ===== Trust strip ===== -->
-    <div class="trust">
-      <div class="container">
-        <div class="trust__grid">
-          <div class="trust__item reveal"><h3><span data-count="3">3</span></h3><p>Role-based portals</p></div>
-          <div class="trust__item reveal d1"><h3>Automated</h3><p>Monthly billing &amp; invoices</p></div>
-          <div class="trust__item reveal d2"><h3>Real-time</h3><p>Network automation</p></div>
-          <div class="trust__item reveal d3"><h3>Secure</h3><p>Multi-tenant cloud</p></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ===== About ===== -->
-    <section class="section" id="about">
-      <div class="container split">
-        <div class="reveal">
-          <span class="eyebrow">About BIS Connect</span>
-          <h2>A Pakistani technology company building practical business software</h2>
-          <p class="lead">BIS Connect is operated by BIS CONNECT (SMC-PRIVATE) LIMITED, an SECP-incorporated software and IT company in Pakistan, with its registered office in Punjab.</p>
-          <p>We design, build and maintain software that solves everyday operational problems for service businesses. Our flagship platform, BIS Connect, helps internet service providers and other subscription-based businesses manage customers, billing, payments, networks and support from a single, reliable system.</p>
-          <p>Alongside our own platform, we provide software development, IT consultancy, systems analysis and design, quality assurance and telecom-related software services to our clients.</p>
-          <div class="mv">
-            <div class="card"><h3>Our mission</h3><p>To give service businesses affordable, dependable software that automates the repetitive work of running operations, so teams can focus on their customers.</p></div>
-            <div class="card"><h3>Our vision</h3><p>To become a trusted technology partner for ISPs and growing businesses across Pakistan and beyond, delivering software engineered to a high professional standard.</p></div>
+        <div class="hero__grid">
+          <div class="hero__copy g-hero">
+            <span class="eyebrow">ISP management software for Pakistan</span>
+            <h1>Run your ISP from one connected platform.</h1>
+            <p>Manage customers, MikroTik routers, packages, billing, revenue and support from web and mobile.</p>
+            <div class="hero__actions">
+              <a class="btn btn-primary btn-lg" href="#demo">Request a demo</a>
+              <a class="btn btn-ghost btn-lg" href="#platform">Explore features</a>
+            </div>
           </div>
-        </div>
-        <div class="reveal d2">
-          <div class="about-visual">
-            <img src="assets/bisconnect-mark.png" alt="BIS Connect logo">
-            <h3>Engineered for real operations</h3>
-            <p>Built from real-world ISP requirements — multi-tenant, cloud-hosted, and designed for teams that need automation they can trust every day.</p>
-          </div>
-          <div class="card company-info reveal d3">
-            <h3>Company information</h3>
-            <dl class="co-info">
-              <div><dt>Legal name</dt><dd>BIS CONNECT (SMC-PRIVATE) LIMITED</dd></div>
-              <div><dt>Company type</dt><dd>Single Member Company (SMC-Private) Limited — limited by shares</dd></div>
-              <div><dt>Incorporating authority</dt><dd>Securities and Exchange Commission of Pakistan (SECP)</dd></div>
-              <div><dt>Corporate UIN (CUIN)</dt><dd>0352556</dd></div>
-              <div><dt>Date of incorporation</dt><dd>25 August 2026</dd></div>
-              <div><dt>Registered office</dt><dd>Punjab, Pakistan</dd></div>
-            </dl>
-            <a class="co-verify" href="https://leap.secp.gov.pk/#/verify-company-info/0352556" target="_blank" rel="noopener noreferrer">Verify on SECP &rarr;</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Services ===== -->
-    <section class="section section--alt" id="services">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">Services</span>
-          <h2>Technology services we provide</h2>
-          <p>Our work spans the software lifecycle — from consultancy and design through development, testing and ongoing support — consistent with our registered business objects.</p>
-        </div>
-        <div class="grid grid-3">
-          <article class="card reveal">
-            <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
-            <h3>Software Development</h3>
-            <p>Custom application development, programming and delivery of maintainable, well-tested software built to your requirements.</p>
-          </article>
-          <article class="card reveal d1">
-            <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
-            <h3>Web &amp; Business Applications</h3>
-            <p>Web-based platforms and business tools that streamline operations, from dashboards to customer-facing portals.</p>
-          </article>
-          <article class="card reveal d2">
-            <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></div>
-            <h3>IT Consultancy</h3>
-            <p>Advisory on technology choices, process improvement and IT requirements management to help you invest wisely.</p>
-          </article>
-          <article class="card reveal">
-            <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 5-6"/></svg></div>
-            <h3>System Analysis &amp; Design</h3>
-            <p>Systems analysis, solution design and architecture that translate business needs into robust technical plans.</p>
-          </article>
-          <article class="card reveal d1">
-            <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
-            <h3>Software Testing &amp; QA</h3>
-            <p>Software testing and quality assurance to ensure releases are stable, secure and dependable in production.</p>
-          </article>
-          <article class="card reveal d2">
-            <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 6.1H3M21 12.1H3M15.1 18H3"/></svg></div>
-            <h3>Project Management &amp; Outsourcing</h3>
-            <p>Project management and IT outsourcing — dedicated capacity to plan, build and support your technology initiatives.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Platform ===== -->
-    <section class="section" id="platform">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">The BIS Connect Platform</span>
-          <h2>Everything an ISP needs to run, in one place</h2>
-          <p>BIS Connect is a multi-tenant, cloud-based platform with dedicated portals for the platform operator, service-provider administrators and their customers.</p>
-        </div>
-        <div class="grid grid-2" style="gap:22px 40px">
-          <div class="feature reveal">
-            <span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-            <div><h3>Customer &amp; account management</h3><p>Onboard and manage customers, subscriptions and account status across your whole base.</p></div>
-          </div>
-          <div class="feature reveal d1">
-            <span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-            <div><h3>Packages &amp; plans</h3><p>Define service packages and assign them to customers with the terms that fit your business.</p></div>
-          </div>
-          <div class="feature reveal">
-            <span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-            <div><h3>Automated billing &amp; invoices</h3><p>Bills generated on schedule with downloadable PDF invoices — no manual monthly workload.</p></div>
-          </div>
-          <div class="feature reveal d1">
-            <span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-            <div><h3>Payment tracking</h3><p>Record cash payments and accept online payments through approved third-party gateways, with clear payment history.</p></div>
-          </div>
-          <div class="feature reveal">
-            <span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-            <div><h3>Network automation (MikroTik)</h3><p>Activate or suspend service and view live sessions across one or many routers — kept in sync with billing.</p></div>
-          </div>
-          <div class="feature reveal d1">
-            <span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-            <div><h3>Staff, admin &amp; reseller roles</h3><p>Role-based access for administrators, staff and downstream resellers with data isolation between tenants.</p></div>
-          </div>
-          <div class="feature reveal">
-            <span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-            <div><h3>Complaints &amp; support</h3><p>Built-in support conversations so customer issues are logged, tracked and resolved in one thread.</p></div>
-          </div>
-          <div class="feature reveal d1">
-            <span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-            <div><h3>Notifications &amp; reminders</h3><p>Push notifications, SMS billing reminders and broadcast messages to keep customers informed.</p></div>
-          </div>
-          <div class="feature reveal">
-            <span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-            <div><h3>Dashboards &amp; reporting</h3><p>Revenue, key metrics, system health and an audit log give administrators a clear operational picture.</p></div>
-          </div>
-          <div class="feature reveal d1">
-            <span class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
-            <div><h3>Subscription-based access</h3><p>Delivered as a subscription SaaS — customers access the service online with no hardware to buy.</p></div>
+          <div class="hero__stage">
+            <div class="browser g-hero" id="heroDash">
+              <div class="browser__bar"><div class="browser__dots"><i></i><i></i><i></i></div><div class="browser__url">app.bisconnect · Dashboard</div></div>
+              <div class="browser__body">
+                <div class="appui">
+                  <aside class="appui__side">
+                    <div class="appui__brand"><img src="assets/bisconnect-mark.png" alt=""> BIS Connect</div>
+                    <div class="appui__nav">
+                      <a class="active"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg> Home</a>
+                      <a><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3"/><path d="M15 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/></svg> Users</a>
+                      <a><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="7" width="16" height="10" rx="2"/><path d="M8 12h.01M12 12h.01"/></svg> Routers</a>
+                      <a><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 5-6"/></svg> Revenue</a>
+                      <a><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg> Broadcast</a>
+                      <div class="grp">Manage</div>
+                      <a><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18"/></svg> Packages</a>
+                      <a>Sub-admins <span class="soon">Coming soon</span></a>
+                    </div>
+                  </aside>
+                  <div class="appui__main">
+                    <div class="appui__top"><div class="appui__title">Dashboard <small>Live, refreshes automatically</small></div><div class="appui__acct"><span class="av">S</span> SkyLink Broadband</div></div>
+                    <div class="kpis">
+                      <div class="kpi acc"><div class="lab"><span class="dot"></span>Online</div><div class="val" data-count="221">221</div><div class="sub">of 248 users</div></div>
+                      <div class="kpi"><div class="lab">Today</div><div class="val">Rs.48.5k</div><div class="sub">collected</div></div>
+                      <div class="kpi"><div class="lab">MRR</div><div class="val">Rs.542k</div><div class="sub">recurring</div></div>
+                      <div class="kpi warn"><div class="lab">Suspended</div><div class="val" data-count="12">12</div><div class="sub">unpaid</div></div>
+                      <div class="kpi bad"><div class="lab">Down</div><div class="val" data-count="9">9</div><div class="sub">offline</div></div>
+                    </div>
+                    <div class="appui__row2">
+                      <div class="panelcard">
+                        <h4>Customers needing attention <a>View all</a></h4>
+                        <table class="utable">
+                          <tr><td><div class="u"><span class="av">B</span> Bilal Raza</div></td><td>Home Plus</td><td><span class="badge gr">Grace</span></td></tr>
+                          <tr><td><div class="u"><span class="av">U</span> Usman Ali</div></td><td>Home Lite</td><td><span class="badge sus">Suspended</span></td></tr>
+                          <tr><td><div class="u"><span class="av">F</span> Fatima Noor</div></td><td>Family Pro</td><td><span class="badge gr">Grace</span></td></tr>
+                        </table>
+                      </div>
+                      <div class="panelcard">
+                        <h4>Routers <a>Manage</a></h4>
+                        <div class="routerline"><span class="mt">MT</span><div><div class="nm">Central Router 01</div><div class="meta">Connected, synced</div></div><div class="cnt"><b>221</b><span>online</span></div></div>
+                        <div style="height:10px"></div>
+                        <div class="routerline" style="background:transparent;border:1px dashed var(--hair);"><div class="mini-empty">All routers healthy, updated 15s ago</div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="phone hero__phone g-hero" aria-hidden="true">
+              <div class="phone__scr"><span class="phone__notch"></span><div class="phoneui">
+                <div class="ph-top"><div><div class="ph-sub">Good evening</div><div class="ph-title">Ahmed Khan</div></div></div>
+                <div class="bill-card"><span class="st">Paid</span><div class="l">Current bill</div><div class="v">Rs.0</div><div class="m">Next billing 30 Sep 2026</div></div>
+                <div class="plan-card"><div class="row1"><b>Home Plus</b><span class="act">Active</span></div><div class="stats"><div><b>20</b><span>Mbps</span></div><div><b>18d</b><span>left</span></div><div><b>0</b><span>issues</span></div></div></div>
+              </div></div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== How it works ===== -->
-    <section class="section section--alt" id="how">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">How it works</span>
-          <h2>From sign-up to daily operations</h2>
-          <p>Getting started with BIS Connect is straightforward, and access is delivered digitally.</p>
-        </div>
-        <div class="steps">
-          <div class="step reveal"><div class="step__num">1</div><h3>Get in touch</h3><p>Contact our team and tell us about your business and the scale you operate at.</p></div>
-          <div class="step reveal d1"><div class="step__num">2</div><h3>Onboarding &amp; setup</h3><p>We set up your account, configure your packages and connect your network where applicable.</p></div>
-          <div class="step reveal d2"><div class="step__num">3</div><h3>Start managing</h3><p>Add customers, and let automated billing, payments and network control do the heavy lifting.</p></div>
-          <div class="step reveal d3"><div class="step__num">4</div><h3>Grow with support</h3><p>Ongoing support and updates keep your operation running smoothly as you scale.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Why BIS Connect ===== -->
-    <section class="section" id="why">
+    <!-- ===== 2. Problem / value ===== -->
+    <section class="section">
       <div class="container">
         <div class="section-head reveal">
           <span class="eyebrow">Why BIS Connect</span>
-          <h2>Software built for how you actually work</h2>
+          <h2>Less manual work. Better control of your network and billing.</h2>
+          <p>ISP teams juggle spreadsheets, separate router logins and constant payment chasing. BIS Connect brings those daily jobs into one system.</p>
         </div>
-        <div class="grid grid-3">
-          <article class="card reveal">
-            <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 7.8 8 9 4.6-1.2 8-4 8-9V5Z"/></svg></div>
-            <h3>Built for reliability</h3>
-            <p>A cloud-hosted, multi-tenant architecture designed for day-in, day-out operational use.</p>
+        <div class="prob">
+          <div class="item reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 10h16M10 4v16"/></svg></span><div><h3>Manual customer management</h3><p>Keep customer records, packages and status in one place instead of scattered spreadsheets.</p></div></div>
+          <div class="item reveal d1"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="7" width="16" height="10" rx="2"/><path d="M8 12h.01M12 12h.01"/></svg></span><div><h3>Disconnected MikroTik operations</h3><p>Provision, suspend and reactivate service on your routers from the same place as billing.</p></div></div>
+          <div class="item reveal d2"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span><div><h3>Billing and collection tracking</h3><p>Generate recurring invoices and see paid, pending and overdue at a glance.</p></div></div>
+          <div class="item reveal d3"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg></span><div><h3>Complaints and communication</h3><p>Track complaints, notifications and reminders in the platform instead of losing them in chat.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 3. Core platform ===== -->
+    <section class="section section--alt" id="platform">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">The platform</span>
+          <h2>One platform for how your ISP actually runs</h2>
+          <p>Six modules that cover day to day ISP operations, on web and mobile.</p>
+        </div>
+        <div class="modgrid">
+          <article class="mod reveal">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3"/><path d="M15 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><path d="M16 3.1a4 4 0 0 1 0 7.8"/></svg></div>
+            <h3>Customer management</h3><p>Onboard and manage every subscriber in one place.</p>
+            <ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Add and edit customers</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Package and status per customer</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Filter by active, grace, suspended</li></ul>
           </article>
-          <article class="card reveal d1">
-            <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
-            <h3>Automation that saves time</h3>
-            <p>Billing, reminders and network changes happen automatically, cutting repetitive manual work.</p>
+          <article class="mod reveal d1">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="7" width="16" height="10" rx="2"/><path d="M8 12h.01M12 12h.01M2 12h2M20 12h2"/></svg></div>
+            <h3>MikroTik operations</h3><p>RouterOS integration built for real networks.</p>
+            <ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Provision PPP profiles</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Suspend and reactivate</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Live active user counts</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Multi router support</li></ul>
           </article>
-          <article class="card reveal d2">
-            <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2Z"/></svg></div>
-            <h3>Made in Pakistan</h3>
-            <p>Designed around local ISP and business needs, and supported by a team that understands the market.</p>
+          <article class="mod reveal d2">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18"/></svg></div>
+            <h3>Packages and provisioning</h3><p>Define plans and connect them to the router.</p>
+            <ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Speed and price per package</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Assign package on signup</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Auto create PPP profile</li></ul>
           </article>
-          <article class="card reveal">
-            <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
-            <h3>Clear, honest billing</h3>
-            <p>Transparent invoices and payment records so both you and your customers always know where things stand.</p>
+          <article class="mod reveal">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 5-6"/></svg></div>
+            <h3>Billing and revenue</h3><p>Generate invoices and track collections in one place.</p>
+            <ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Automated monthly invoices</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>PDF invoices</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Paid, pending, overdue tracking</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Revenue reporting</li></ul>
           </article>
-          <article class="card reveal d1">
-            <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"/><path d="M12 8v4l3 2"/></svg></div>
-            <h3>Support when you need it</h3>
-            <p>Direct access to our team for onboarding, questions and ongoing assistance.</p>
+          <article class="mod reveal d1">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg></div>
+            <h3>Complaints and support</h3><p>Handle customer issues in one tracked thread.</p>
+            <ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Complaint categories</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Photo and voice attachments</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Status tracking</li></ul>
           </article>
-          <article class="card reveal d2">
-            <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
-            <h3>Security-minded</h3>
-            <p>Tenant data isolation and controlled, role-based access are core to how the platform is built.</p>
+          <article class="mod reveal d2">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg></div>
+            <h3>Communication and audit</h3><p>Keep people informed and actions on record.</p>
+            <ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Broadcast messages</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Push notifications</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>SMS reminders where configured</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Full audit trail</li></ul>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ===== Pricing ===== -->
-    <section class="section section--tint" id="pricing">
+    <!-- ===== 4. How it works ===== -->
+    <section class="section band-dark" id="how">
       <div class="container">
         <div class="section-head reveal">
-          <span class="eyebrow">Pricing</span>
-          <h2>Pricing tailored to your scale</h2>
-          <p>BIS Connect is offered as a subscription service. Because every ISP and business is different, we put together a plan that matches your customer base and the features you need.</p>
+          <span class="eyebrow">How it works</span>
+          <h2>From network setup to daily operations</h2>
+          <p>Four steps from connecting your network to running billing and support in one place.</p>
         </div>
-        <div class="cta-panel reveal">
-          <h2>Let's find the right plan for you</h2>
-          <p>Tell us about your operation and we'll share pricing and a recommended setup. No obligation.</p>
-          <div class="hero__actions">
-            <a class="btn btn-primary btn-lg" href="#contact">Request Pricing</a>
-            <a class="btn btn-ghost btn-lg" href="mailto:bisconnect.info@gmail.com?subject=BIS%20Connect%20pricing%20enquiry">Talk to Our Team</a>
+        <div class="howflow">
+          <div class="step reveal"><div class="num">01</div><h3>Connect your MikroTik</h3><p>Add your router through the platform's secured integration.</p></div>
+          <div class="step reveal d1"><div class="num">02</div><h3>Add customers and packages</h3><p>Create or import customers and define your plans.</p></div>
+          <div class="step reveal d2"><div class="num">03</div><h3>Provision and manage service</h3><p>Auto create PPP profiles and activate, suspend or reactivate.</p></div>
+          <div class="step reveal d3"><div class="num">04</div><h3>Track billing and support</h3><p>Watch collections, complaints and router status from one dashboard.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 5. Product operations ===== -->
+    <section class="section" id="operations">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Product operations</span>
+          <h2>From new customer to connected, in one workflow</h2>
+          <p>Create a customer, assign a package, provision them on the router and activate service.</p>
+        </div>
+        <div class="feat">
+          <div class="reveal">
+            <h3>Manage your whole customer base</h3>
+            <p class="lead">Search, filter and act on customers by status, all from the web dashboard or your phone.</p>
+            <ul class="ticks">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><div><b>Status filters</b> for active, grace, suspended and offline customers.</div></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><div><b>Package and speed</b> shown per customer.</div></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><div><b>Quick actions</b> to add, suspend or reactivate.</div></li>
+            </ul>
+          </div>
+          <div class="feat__media reveal d1">
+            <div class="browser">
+              <div class="browser__bar"><div class="browser__dots"><i></i><i></i><i></i></div><div class="browser__url">app.bisconnect · Users</div></div>
+              <div class="browser__body"><div class="appui appui--full" id="usersMock"><div class="appui__main">
+                <div class="appui__top"><div class="appui__title">Users <small>248 total</small></div><span class="pillbtn">Add customer</span></div>
+                <div class="chips"><span class="chip on">All<b>248</b></span><span class="chip">Active<b>221</b></span><span class="chip">Grace<b>6</b></span><span class="chip">Suspended<b>12</b></span><span class="chip">Down<b>9</b></span></div>
+                <table class="utable">
+                  <tr><td><div class="u"><span class="av">A</span> Ahmed Khan</div></td><td>Home Plus, 20 Mbps</td><td style="text-align:right"><span class="badge ok">Active</span></td></tr>
+                  <tr><td><div class="u"><span class="av">S</span> Sana Malik</div></td><td>Family Pro, 30 Mbps</td><td style="text-align:right"><span class="badge ok">Active</span></td></tr>
+                  <tr><td><div class="u"><span class="av">B</span> Bilal Raza</div></td><td>Home Plus, 20 Mbps</td><td style="text-align:right"><span class="badge gr">Grace</span></td></tr>
+                  <tr><td><div class="u"><span class="av">U</span> Usman Ali</div></td><td>Home Lite, 10 Mbps</td><td style="text-align:right"><span class="badge sus">Suspended</span></td></tr>
+                  <tr><td><div class="u"><span class="av">H</span> Hamza Sheikh</div></td><td>Business, 50 Mbps</td><td style="text-align:right"><span class="badge ok">Active</span></td></tr>
+                </table>
+              </div></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="flow">
+          <div class="n reveal"><div class="s">1</div><h4>Create customer</h4><p>Name, package and contact.</p></div>
+          <div class="n reveal d1"><div class="s">2</div><h4>Assign package and router</h4><p>Plan and MikroTik or village.</p></div>
+          <div class="n reveal d2"><div class="s">3</div><h4>Provision PPP</h4><p>Auto create on the router.</p></div>
+          <div class="n reveal d3"><div class="s">4</div><h4>Send welcome info</h4><p>Credentials by SMS where set up.</p></div>
+        </div>
+
+        <div class="feat rev" style="margin-top:52px">
+          <div class="reveal">
+            <h3>Your network and billing stay in sync</h3>
+            <p class="lead">BIS Connect talks to RouterOS to provision customers and keep service status aligned with billing.</p>
+            <ul class="ticks">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><div><b>Suspend and reactivate</b> driven by billing status.</div></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><div><b>Live status and health</b> for each router.</div></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><div><b>Multi router</b> management across sites.</div></li>
+            </ul>
+          </div>
+          <div class="feat__media reveal d1">
+            <div class="integ" id="integMock">
+              <div class="integ__head"><span class="mt">MT</span><div><div class="nm">Central Router 01</div><div class="ty">MikroTik, RouterOS API</div></div><span class="st">Connected</span></div>
+              <div class="integ__rows">
+                <div class="r"><span>Server</span><b>203.0.113.10</b></div>
+                <div class="r"><span>Protocol</span><b>API / SSL</b></div>
+                <div class="r"><span>Active users</span><b>221</b></div>
+                <div class="r"><span>Last sync</span><b>15s ago</b></div>
+                <div class="r"><span>Health</span><b>CPU 6%, RAM 21%</b></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== Policy summary ===== -->
-    <section class="section" id="policies">
+    <!-- ===== 6. Billing & revenue ===== -->
+    <section class="section section--alt" id="billing">
       <div class="container">
         <div class="section-head reveal">
-          <span class="eyebrow">Trust &amp; policies</span>
-          <h2>Clear policies for our customers</h2>
-          <p>We believe in transparent terms. Read how we handle data, payments, service delivery and cancellations.</p>
+          <span class="eyebrow">Billing and revenue</span>
+          <h2>Automated billing and revenue reporting</h2>
+          <p>Recurring billing, PDF invoices and revenue reporting, with paid, pending and overdue always visible.</p>
         </div>
-        <div class="policy-links reveal">
-          <a href="privacy-policy.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 7.8 8 9 4.6-1.2 8-4 8-9V5Z"/></svg> Privacy Policy</a>
-          <a href="terms-and-conditions.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/></svg> Terms &amp; Conditions</a>
-          <a href="refund-cancellation-policy.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg> Refund &amp; Cancellation</a>
-          <a href="service-delivery-policy.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Service Delivery</a>
-          <a href="payment-policy.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg> Payment Policy</a>
+        <div class="feat">
+          <div class="feat__media reveal">
+            <div class="browser">
+              <div class="browser__bar"><div class="browser__dots"><i></i><i></i><i></i></div><div class="browser__url">app.bisconnect · Revenue</div></div>
+              <div class="browser__body"><div class="appui appui--full" id="revMock"><div class="appui__main">
+                <div class="appui__top"><div class="appui__title">Revenue <small>Last 30 days</small></div></div>
+                <div class="rev-hero"><div class="lab">Received</div><div class="val">PKR 542,500</div><div class="sub">Today: PKR 48,500 collected</div></div>
+                <div class="rev-stat">
+                  <div class="s"><i style="background:var(--ok)"></i><b>195</b><span>Paid</span></div>
+                  <div class="s"><i style="background:var(--warn)"></i><b>29</b><span>Pending</span></div>
+                  <div class="s"><i style="background:var(--bad)"></i><b>14</b><span>Overdue</span></div>
+                </div>
+                <div class="panelcard"><h4>Daily collections</h4>
+                  <div class="bars"><span class="b" style="height:38%"></span><span class="b" style="height:52%"></span><span class="b" style="height:44%"></span><span class="b" style="height:66%"></span><span class="b" style="height:58%"></span><span class="b" style="height:80%"></span><span class="b" style="height:72%"></span><span class="b" style="height:90%"></span><span class="b" style="height:64%"></span><span class="b" style="height:78%"></span><span class="b" style="height:70%"></span><span class="b" style="height:96%"></span></div>
+                </div>
+              </div></div></div>
+            </div>
+          </div>
+          <div class="reveal d1">
+            <div class="invoice">
+              <div class="invoice__top"><div class="invoice__brand"><img src="assets/bisconnect-mark.png" alt=""> BIS Connect</div><div class="invoice__amt"><div class="l">Amount</div><div class="v">PKR 2,500</div></div></div>
+              <div class="invoice__meta">
+                <div><div class="k">Invoice</div><div class="v">INV-DEMO-202609-0048</div></div>
+                <div><div class="k">Status</div><div class="v" style="color:var(--ok)">Paid</div></div>
+                <div><div class="k">Billed by (ISP)</div><div class="v">SkyLink Broadband</div></div>
+                <div><div class="k">Billed to</div><div class="v">Ahmed Khan</div></div>
+                <div><div class="k">Issue date</div><div class="v">26 Sep 2026</div></div>
+                <div><div class="k">Due date</div><div class="v">30 Sep 2026</div></div>
+              </div>
+              <table class="invoice__tbl"><tr><th>Description</th><th>Speed</th><th style="text-align:right">Amount</th></tr><tr><td>Home Plus, monthly subscription</td><td>20 Mbps</td><td style="text-align:right">PKR 2,500</td></tr></table>
+              <div class="invoice__tot"><div class="box"><div class="ln"><span>Subtotal</span><span>PKR 2,500</span></div><div class="ln total"><span>Total due</span><span>PKR 2,500</span></div></div></div>
+              <div class="invoice__paid">Paid on 26 Sep 2026</div>
+            </div>
+          </div>
+        </div>
+        <p class="lead reveal" style="text-align:center;margin:32px auto 0;max-width:620px;font-size:1rem">Built for integrated billing and digital payment integrations. Payment gateway integrations, including PayFast, are being added.</p>
+      </div>
+    </section>
+
+    <!-- ===== 7. Web & mobile ===== -->
+    <section class="section" id="mobile">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Web and mobile</span>
+          <h2>Built for both sides of the ISP</h2>
+          <p>Your team runs operations from the web and their phones. Your subscribers manage their account from theirs.</p>
+        </div>
+        <div class="aud">
+          <div class="col reveal">
+            <div class="k">For ISP teams</div>
+            <h3>Run operations from anywhere</h3>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Live dashboard of online users and revenue</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Add customers and provision service</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Router status and offline or suspended users</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Billing and support on the go</li>
+            </ul>
+            <div class="phones">
+              <div class="phone"><div class="phone__scr"><span class="phone__notch"></span><div class="phoneui">
+                <div class="ph-top"><div class="ph-title">Dashboard</div><div class="ph-sub">SkyLink</div></div>
+                <div class="kpis" style="grid-template-columns:1fr 1fr;gap:8px">
+                  <div class="kpi acc"><div class="lab">Online</div><div class="val" style="font-size:1.2rem">221</div><div class="sub">of 248</div></div>
+                  <div class="kpi"><div class="lab">Today</div><div class="val" style="font-size:1.2rem">48.5k</div><div class="sub">PKR</div></div>
+                  <div class="kpi warn"><div class="lab">Suspended</div><div class="val" style="font-size:1.2rem">12</div></div>
+                  <div class="kpi bad"><div class="lab">Down</div><div class="val" style="font-size:1.2rem">9</div></div>
+                </div>
+                <div class="routerline" style="margin-top:6px"><span class="mt">MT</span><div><div class="nm" style="font-size:.72rem">Central Router 01</div><div class="meta">Connected</div></div><div class="cnt"><b>221</b></div></div>
+              </div></div></div>
+            </div>
+          </div>
+          <div class="col reveal d1">
+            <div class="k">For subscribers</div>
+            <h3>A simple app for your customers</h3>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Current bill and payment status</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Invoice history and package details</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Upgrade requests</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Complaints, support and profile</li>
+            </ul>
+            <div class="phones">
+              <div class="phone"><div class="phone__scr"><span class="phone__notch"></span><div class="phoneui">
+                <div class="ph-top"><div><div class="ph-sub">Good evening</div><div class="ph-title">Ahmed Khan</div></div></div>
+                <div class="bill-card"><span class="st">Paid</span><div class="l">Current bill</div><div class="v">PKR 0</div><div class="m">INV-DEMO-202609-0048</div></div>
+                <div class="plan-card"><div class="row1"><b>Home Plus</b><span class="act">Active</span></div><div class="stats"><div><b>20</b><span>Mbps</span></div><div><b>18</b><span>days left</span></div><div><b>0</b><span>issues</span></div></div></div>
+                <div class="qacts"><div class="q"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h8"/></svg>Invoices</div><div class="q"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 2 18a2 2 0 0 0 1.7 3h16.6A2 2 0 0 0 22 18Z"/></svg>Complaint</div><div class="q"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg>Support</div><div class="q"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M4 12h2M18 12h2M12 4v2M12 18v2"/></svg>Settings</div></div>
+              </div></div></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== Contact ===== -->
-    <section class="section section--alt" id="contact">
+    <!-- ===== 8. Trust, security & company ===== -->
+    <section class="section section--alt" id="company">
+      <div class="container">
+        <div class="feat">
+          <div class="reveal">
+            <span class="eyebrow">Trust and security</span>
+            <h2>Operated by a registered Pakistani software company</h2>
+            <p class="lead">BIS Connect is built and operated by BIS CONNECT (SMC-PRIVATE) LIMITED, an SECP incorporated software and IT company in Pakistan.</p>
+            <ul class="trustlist">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><div><b>Secure authentication</b> handled by Firebase Authentication.</div></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3"/><path d="M15 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/></svg><div><b>Role based access</b> for administrators, staff and customers.</div></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 5v6c0 5 3.4 7.8 8 9 4.6-1.2 8-4 8-9V5Z"/></svg><div><b>Tenant isolation</b> so each ISP's data is separate.</div></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/></svg><div><b>Audit history</b> of key actions for accountability.</div></li>
+            </ul>
+          </div>
+          <div class="reveal d1">
+            <div class="card company-info">
+              <h3>Company information</h3>
+              <dl class="co-info">
+                <div><dt>Legal name</dt><dd>BIS CONNECT (SMC-PRIVATE) LIMITED</dd></div>
+                <div><dt>Company type</dt><dd>Single Member Company (SMC-Private) Limited</dd></div>
+                <div><dt>Incorporating authority</dt><dd>Securities and Exchange Commission of Pakistan (SECP)</dd></div>
+                <div><dt>Corporate UIN (CUIN)</dt><dd>0352556</dd></div>
+                <div><dt>Date of incorporation</dt><dd>25 August 2026</dd></div>
+                <div><dt>Registered office</dt><dd>Punjab, Pakistan</dd></div>
+              </dl>
+              <a class="co-verify" href="https://leap.secp.gov.pk/#/verify-company-info/0352556" target="_blank" rel="noopener noreferrer">Verify on SECP</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 9. Demo / contact ===== -->
+    <section class="section band-dark" id="demo">
       <div class="container">
         <div class="section-head reveal">
-          <span class="eyebrow">Contact us</span>
-          <h2>Talk to BIS Connect</h2>
-          <p>Questions, a demo, or pricing — reach out and our team will get back to you.</p>
+          <span class="eyebrow">Request a demo</span>
+          <h2>See BIS Connect with your ISP workflow</h2>
+          <p>Tell us how you currently manage customers, routers and billing. We can walk you through the parts of BIS Connect relevant to your operation.</p>
         </div>
-        <div class="contact-grid">
-          <div class="contact-card reveal">
-            <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4Z"/><path d="m22 6-10 7L2 6"/></svg></div>
-            <h3>Email</h3>
-            <p><a href="mailto:bisconnect.info@gmail.com">bisconnect.info@gmail.com</a></p>
-          </div>
-          <div class="contact-card reveal d1">
-            <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/></svg></div>
-            <h3>Phone</h3>
-            <p><a href="tel:+923494061949">+92 349 4061949</a><br><a href="tel:+923451112749">+92 345 1112749</a></p>
-          </div>
-          <div class="contact-card reveal d2">
-            <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
-            <h3>Registered office</h3>
-            <p>Kariwala Chak No 49, Tehsil Shahkot,<br>District Nankana Sahib, Shahkot,<br>Nankana Sahib, Punjab, Pakistan</p>
+        <div class="demo">
+          <form class="demo__form reveal" id="demoForm">
+            <div class="row">
+              <div class="fld"><label for="d_name">Your name</label><input id="d_name" name="name" type="text" placeholder="Full name" required></div>
+              <div class="fld"><label for="d_isp">ISP / company</label><input id="d_isp" name="isp" type="text" placeholder="Company name"></div>
+            </div>
+            <div class="row">
+              <div class="fld"><label for="d_phone">Phone or WhatsApp</label><input id="d_phone" name="phone" type="text" placeholder="e.g. 0300 0000000" required></div>
+              <div class="fld"><label for="d_size">Approx. customers</label>
+                <select id="d_size" name="size"><option value="">Select</option><option>Under 500</option><option>500 to 2,000</option><option>2,000 to 10,000</option><option>10,000+</option></select>
+              </div>
+            </div>
+            <div class="fld"><label for="d_msg">What would you like to see?</label><textarea id="d_msg" name="message" placeholder="How you manage customers, routers and billing today"></textarea></div>
+            <button class="btn btn-primary btn-lg" type="submit" style="width:100%">Request a demo</button>
+            <p class="demo__note">This opens your email app with the details filled in, addressed to our team. You can also email or call us directly.</p>
+          </form>
+          <div class="reveal d1">
+            <h3 style="color:#fff">Prefer to reach us directly?</h3>
+            <div class="demo__contact">
+              <a href="mailto:bisconnect.info@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4Z"/><path d="m22 6-10 7L2 6"/></svg> bisconnect.info@gmail.com</a>
+              <a href="tel:+923494061949"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/></svg> +92 349 4061949</a>
+              <a href="tel:+923451112749"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/></svg> +92 345 1112749</a>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Kariwala Chak No 49, Tehsil Shahkot, District Nankana Sahib, Punjab, Pakistan</span>
+            </div>
           </div>
         </div>
-        <div style="text-align:center; margin-top:38px">
-          <a class="btn btn-primary btn-lg reveal" href="mailto:bisconnect.info@gmail.com?subject=BIS%20Connect%20enquiry">Email Us</a>
+      </div>
+    </section>
+
+    <!-- ===== 10. FAQ ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>Common questions</h2>
+        </div>
+        <div class="faq reveal">
+          <details open><summary>What is BIS Connect?</summary><p>BIS Connect is a cloud based ISP management platform. It brings customer management, MikroTik operations, packages, billing, revenue and support into one system, available on web and mobile.</p></details>
+          <details><summary>Who is BIS Connect for?</summary><p>It is built for internet service providers in Pakistan, from smaller operators to growing networks, and for the teams who run their day to day operations.</p></details>
+          <details><summary>Does BIS Connect work with MikroTik?</summary><p>Yes. BIS Connect integrates with MikroTik RouterOS to provision customers, suspend and reactivate service, and keep status in sync with billing across one or many routers.</p></details>
+          <details><summary>Can ISP admins use BIS Connect from mobile?</summary><p>Yes. Administrators and staff can run core operations from the mobile app, including the dashboard, customers, router status, billing and support.</p></details>
+          <details><summary>Is there a customer app?</summary><p>Yes. Subscribers can view their current bill, invoice history and package, request upgrades, raise complaints and manage their profile.</p></details>
+          <details><summary>Does BIS Connect create invoices?</summary><p>Yes. Invoices are generated on a recurring schedule as PDF documents, with paid, pending and overdue status tracked for each customer.</p></details>
+          <details><summary>Can customers submit complaints?</summary><p>Yes. Customers can raise complaints by category with a description and attachments, and both customers and admins can track them to resolution.</p></details>
+          <details><summary>Does BIS Connect support multiple roles?</summary><p>Yes. Access is role based, so administrators, staff and customers each see only what their role allows, with tenant isolation between ISPs.</p></details>
+          <details><summary>How are payments handled?</summary><p>BIS Connect records cash payments and is built for integrated billing. Digital payment gateway integrations, including PayFast, are being added and are not yet live. A sub-admin (reseller) tier is planned and marked coming soon.</p></details>
         </div>
       </div>
     </section>
@@ -376,15 +490,15 @@
         <div class="footer-brand">
           <img src="assets/bisconnect-mark.png" alt="BIS Connect logo">
           <div class="legal-name">BIS CONNECT (SMC-PRIVATE) LIMITED</div>
-          <p>Cloud-based ISP &amp; business management software, plus IT consultancy and telecom software services — built in Pakistan.</p>
+          <p>Cloud based ISP management software for web and mobile, plus IT consultancy and telecom software services, built in Pakistan.</p>
         </div>
         <div>
-          <h4>Company</h4>
+          <h4>Platform</h4>
           <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
             <li><a href="#platform">Platform</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#operations">Features</a></li>
+            <li><a href="#how">How it works</a></li>
+            <li><a href="#mobile">Mobile</a></li>
           </ul>
         </div>
         <div>
@@ -408,11 +522,14 @@
       </div>
       <div class="footer-bottom">
         <span>&copy; <span data-year>2026</span> BIS CONNECT (SMC-PRIVATE) LIMITED. All rights reserved.</span>
-        <span>SECP-incorporated in Pakistan, with its registered office in Punjab.</span>
+        <span>SECP incorporated in Pakistan, with its registered office in Punjab.</span>
       </div>
     </div>
   </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.14/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-/* BIS Connect — site interactions. Vanilla JS, no dependencies. */
+/* BIS Connect, site interactions. Vanilla JS, no dependencies. */
 (function () {
   'use strict';
 
@@ -81,4 +81,59 @@
   /* ---- Current year in footer ---- */
   var yr = document.querySelectorAll('[data-year]');
   yr.forEach(function (el) { el.textContent = new Date().getFullYear(); });
+
+  /* ---- Swiper: customer app carousel (progressive enhancement) ---- */
+  if (typeof Swiper !== 'undefined' && document.getElementById('appSwiper')) {
+    try {
+      new Swiper('#appSwiper', {
+        slidesPerView: 1.15, spaceBetween: 18, centeredSlides: true, grabCursor: true,
+        pagination: { el: '.swiper-pagination', clickable: true },
+        breakpoints: {
+          640:  { slidesPerView: 2.2, centeredSlides: false },
+          900:  { slidesPerView: 3.2, centeredSlides: false },
+          1160: { slidesPerView: 4, centeredSlides: false }
+        }
+      });
+    } catch (e) { /* leave slides as a static row if init fails */ }
+  }
+
+  /* ---- Demo request: compose a prefilled email (no fake submission) ---- */
+  var demoForm = document.getElementById('demoForm');
+  if (demoForm) {
+    demoForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var g = function (id) { var el = document.getElementById(id); return el ? el.value.trim() : ''; };
+      var lines = [
+        'Name: ' + g('d_name'),
+        'ISP / company: ' + g('d_isp'),
+        'Phone / WhatsApp: ' + g('d_phone'),
+        'Approx. customers: ' + g('d_size'),
+        '',
+        'What they want to see:',
+        g('d_msg')
+      ];
+      var url = 'mailto:bisconnect.info@gmail.com'
+        + '?subject=' + encodeURIComponent('BIS Connect demo request')
+        + '&body=' + encodeURIComponent(lines.join('\n'));
+      window.location.href = url;
+    });
+  }
+
+  /* ---- GSAP hero entrance (optional; content is visible without it) ---- */
+  if (!reduceMotion && typeof gsap !== 'undefined') {
+    // Only NOW hide the hero pieces, so if GSAP is missing they never get hidden.
+    document.documentElement.classList.add('gsap-ready');
+    try {
+      var tl = gsap.timeline({ defaults: { ease: 'power3.out', duration: 0.8 } });
+      tl.from('.hero__copy.g-hero', { y: 24, opacity: 0 })
+        .from('#heroDash', { y: 34, opacity: 0, scale: 0.98 }, '-=0.5')
+        .from('.hero__phone.g-hero', { y: 40, opacity: 0 }, '-=0.5');
+      // safety: guarantee visible shortly after, even if a tween is interrupted
+      setTimeout(function () {
+        document.querySelectorAll('.g-hero').forEach(function (el) { el.style.opacity = '1'; });
+      }, 1600);
+    } catch (e) {
+      document.querySelectorAll('.g-hero').forEach(function (el) { el.style.opacity = '1'; });
+    }
+  }
 })();
